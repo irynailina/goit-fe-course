@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-top: 72px;
+    margin-bottom: 100px;
+}
+
+/* site navigation */
+
+.site-navigation {
+    display: inline-block;
+    vertical-align: middle;
+    width: 900px;
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 100px;
+}
+
+.main-menu a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+.main-menu-item {
+    list-style: none;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+    color: #03a9f4
+}
+
+/* articles list*/
+
+.articles-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.articles-list li {
+    margin-bottom: 134px;
+}
+
+
+.articles-list-item {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    font-size: 14px;
+}
+
+.articles-list-item p {
+    font-size: 14px;
+}
+
+
+.articles-list-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.articles-list-item img {
+    margin-bottom: 30px;
+}
+
+.articles-list-item a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.articles-list-item h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.bottom-item {
+    margin-bottom: 0;
+}
+
+.load-button {
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 22px 32px;
+    width: 164px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    cursor: pointer;
+    text-align: center;
+}
+
+.load-button:focus {
+    color: #03a9f4
+}
