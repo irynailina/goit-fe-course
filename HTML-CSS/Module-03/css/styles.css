@@ -98,7 +98,7 @@ img {
     font-size: 14px;
 }
 
-.articles-list-item p {
+.articles-text {
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -113,7 +113,7 @@ img {
     margin-bottom: 30px;
 }
 
-.articles-list-item a {
+.menu-nav-part {
     margin-bottom: 30px;
     text-decoration: none;
     color: #b4ad9e;
@@ -126,18 +126,16 @@ img {
     font-size: 30px;
     font-weight: normal;
     margin-bottom: 40px;
-    margin-top: 28px;
+    margin-top: 0;
 }
 
 .bottom-item {
     margin-bottom: 0;
 }
 
-.button {
+.load-button {
     padding-top: 52px;
     padding-bottom: 70px;
-}
-.load-button {
     display: block;
     vertical-align: middle;
     margin: 0 auto;
@@ -150,6 +148,7 @@ img {
     text-align: center;
 }
 
-.load-button:focus {
+.load-button:focus,
+.load-button:hover {
     color: #03a9f4
 }
