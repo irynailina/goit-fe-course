@@ -57,7 +57,6 @@ img {
 /*SITE NAVIGATION*/
 
 .site-navigation {
-  /* width: 462px;*/
     margin-right: 30px;
     float: right;
     margin: 0;
@@ -70,6 +69,7 @@ img {
 
 .site-navigation li {
     float: left;
+    margin-right: 36px;
     
 }
 
@@ -97,28 +97,16 @@ img {
     float: left;
     margin-bottom: 24px;
     margin-right: 30px;
+   background-color: #e9f0fd ;
+  
+  
     
-}
-/*
-.products-list-item:nth-child(4n+1) {
-    padding-left: 30px;
-}
-
-.products-list-item:nth-child(8) {
-    padding-right: 30px;
-}
-
-.products-list-item:nth-child(4) {
-    padding-right: 30px;
-}
-.products-list-item:not(:nth-child(4n)) {
-    padding-right: 30px;
 }
 
 .products-list-item:nth-last-child(-n + 4) {
     margin-bottom: 0;
 }
-*/
+
 .products {
     margin-bottom: 100px;
 }
@@ -140,6 +128,28 @@ img {
     line-height: 32px;
 
 }
+
+.bag {
+    height: 322px;
+    padding-top: 40px;
+}
+
+.bag-info {
+    padding-top: 70px;
+}
+
+.sunglasses {
+    height: 322px;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.sunglasses-info {
+    padding-top: 124px;
+}
+
+
+
 
 .info p:hover {
     background: #1abc9c;
@@ -189,6 +199,7 @@ h2 {
     margin: 0;
     padding: 0;
     text-align: center;
+    margin-bottom: 94px ;
 }
 
 
@@ -201,7 +212,7 @@ h2 {
     background-color: #1abc9c;
     margin: 0 auto;
     margin-top: 28px;
-    margin-bottom: 94px ;
+    
 }
 
 /*NEWS*/
@@ -216,7 +227,7 @@ h2 {
     background-color: #4ec6ab;
     margin: 0 auto;
     margin-top: 28px;
-    margin-bottom: 80px;
+    
 }
 .news-list {
     list-style: none;
@@ -278,7 +289,7 @@ h2 {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    color: #ffffff;
+    
     display: block;
     text-align: left;
     padding: 18px 42px;
@@ -289,12 +300,17 @@ h2 {
     text-align: center;
 }
 
+.button-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .latest-news {
     padding-bottom: 82px;
 }
 
-.load-more:hover,
-.load-more:focus {
+.button-link:hover,
+.button-link:focus {
     color: blueviolet;
 }
     
