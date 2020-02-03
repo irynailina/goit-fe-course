@@ -31,6 +31,7 @@ img {
 .container {
     width: 1170px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 
@@ -48,7 +49,7 @@ img {
     line-height: 32px;
     color: #555252;
     text-transform: uppercase; 
-    padding-left: 30px;
+    
 }
 
 .site-logo::first-letter {
@@ -71,6 +72,10 @@ img {
     float: left;
     margin-right: 36px;
     
+}
+
+.site-navigation li:last-child {
+    margin: 0;
 }
 
 .site-navigation li:not(:last-child) {
@@ -102,6 +107,10 @@ img {
   
   
     
+}
+
+.products-list-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .products-list-item:nth-last-child(-n + 4) {
@@ -256,8 +265,12 @@ h2 {
     font-size: 18px;
     line-height: 26px;
     color: #555252;
-    margin-top: 12px;
     text-align: left;
+    margin-top: 0;
+}
+
+.news-image {
+    margin-bottom: 12px;
 }
 
 .about::after {
