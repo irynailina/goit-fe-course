@@ -55,13 +55,14 @@ img {
     font-size: 30px;
     line-height: 32px;
     color: #555252;
-    text-transform: uppercase; 
-    padding-left: 30px;
+    text-transform: uppercase;
+
 }
 
 .site-logo::first-letter {
     color: #1abc9c;
 }
+
 /*SITE NAVIGATION*/
 
 .site-navigation {
@@ -69,7 +70,7 @@ img {
     float: right;
     margin: 0;
     padding: 0;
-    font-size: 14px;    
+    font-size: 14px;
     list-style: none;
     padding-top: 10px;
 }
@@ -77,8 +78,8 @@ img {
 
 .site-navigation li {
     float: left;
-    
-    
+
+
 }
 
 .site-navigation li:not(:last-child) {
@@ -104,14 +105,18 @@ img {
 
 
 .slider-section {
-    background-size: cover;
     position: relative;
 }
 
 .slider-image {
+
     width: 100%;
-    
+    height: 100%;
+    object-fit: cover;
+
 }
+
+
 .slider-image {
     margin-right: 0;
 }
@@ -119,33 +124,88 @@ img {
 .overlay-image::before {
     content: "";
     display: block;
-    
+
     width: 100%;
     height: 100%;
     position: absolute;
     background-color: rgb(0, 0, 2, 0.522);
 }
-  
+
+.slider-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.slider-block {
+
+    position: relative;
+
+}
+
+
+
+
+.slider-button {
+    padding: 0;
+    background-color: rgb(78, 198, 171, 0.651);
+    border: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+
+}
+
+.slider-button:hover {
+
+    background-color: #55a18f;
+}
+
+.slider-button-prev {
+    display: inline-block;
+    background-image: url("../images/slider-prev.png");
+    width: 95px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider-button-next {
+    display: inline-block;
+    background-image: url("../images/slider-next.png");
+    width: 95px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+
+}
+
 .slider-info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    text-align: left;  
+    width: 790px;
+    text-align: left;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    
+
 }
 
 .slider-title {
-    
+
     font-weight: 900;
     font-size: 60px;
     line-height: 82px;
     margin: 0;
-    
+
 }
 
 .slider-text {
@@ -154,53 +214,6 @@ img {
     font-size: 24px;
     line-height: 54px;
 }
-  
-  
-
-.slider-block {
-    width: 1110px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    padding: 0;
-    padding-left: 30px;
-    
-}
-
-.slider-button {
-    padding: 0;
-    background-color: rgb(78, 198, 171, 0.651);
-}
-
-.slider-button:hover {
-    
-    background-color: #55a18f;
-}
-
-.slider-button-prev {
-    display: inline-block;
-    background-image: url("../images/slider-prev.png");
-    /* background-color: #55a18f; */
-    width: 95px;
-    height: 106px;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-
-.slider-button-next {
-    display: inline-block;
-    background-image: url("../images/slider-next.png");
-    width: 95px;
-    height: 106px;
-    /* background-color: #55a18f; */
-    background-repeat: no-repeat;
-    background-position: center;
-    right: 0;
-    position: absolute;
-}
-
 
 /*PRODUCTS*/
 
@@ -220,9 +233,6 @@ img {
     float: left;
     margin-right: 30px;
     position: relative;
-    
-   /* margin-right: 40px;*/
-    
 }
 
 .products-list-item:last-child {
@@ -249,11 +259,6 @@ img {
     background-color: #1abc9c;
     margin: 0 auto;
     margin-top: 28px;
-
-}
-
-.products-list-image {
-    height: 286px;
 }
 
 .item-name-title {
@@ -264,8 +269,9 @@ img {
     font-size: 18px;
     line-height: 32px;
     vertical-align: middle;
-   
+
 }
+
 .item-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -280,8 +286,8 @@ img {
     padding-top: 6px;
     cursor: pointer;
     text-decoration: none;
-    
-    
+
+
 }
 
 .item-price {
@@ -307,23 +313,24 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 255px;
-    height: 286px;
+    width: 100%;
+    height: 100%;
     border-width: 10px;
-    border-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.5);
     border-style: solid;
-    background-color: rgba(0, 0, 0, .5);  
-    opacity: 0; 
-    visibility: hidden;   
+    background-clip: padding-box;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
 }
 
-.products-list-item:hover  .overlay {
+.products-list-item:hover .overlay {
     opacity: 1;
     visibility: visible;
 }
 
-.info a:hover  {
-    background-color: rgb(26, 188, 156); 
+.info a:hover {
+    background-color: rgb(26, 188, 156);
 }
 
 .products-list-item:hover .info a {
@@ -339,20 +346,17 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 165px;
-    
-  
-
 }
 
 
 .card-button {
     float: left;
-    
 }
 
 .card-button:first-child {
     margin-right: 7px;
 }
+
 .card-button:nth-child(2n) {
     margin-right: 7px;
 }
@@ -362,12 +366,11 @@ img {
 }
 
 .card-button:hover {
-    background-color: rgb(26, 188, 156);;
+    background-color: rgb(26, 188, 156);
+    ;
 }
 
-/* .overlay-link:hover {
-    background-color: rgb(26, 188, 156);;
-} */
+
 
 .overlay-link {
     display: block;
@@ -376,19 +379,20 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     border-width: 1px;
-    border-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.65);
     border-style: solid;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .like {
     background-image: url("../images/buttons/like.png");
-    
+
 }
 
 .share {
     background-image: url("../images/buttons/share.png");
-    
+
 }
 
 .time {
@@ -404,49 +408,36 @@ img {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    background-position: 6px;
-    
-    
+    background-position: 14px;
+    padding-left: 52px;
+
 }
 
-.Rectangle_5 {
-    background-color: rgb(78, 198, 171, 0.651);
-    opacity: 0.651;
-    position: absolute;
-    left: 245px;
-    top: 316px;
-    width: 104px;
-    height: 104px;
-    z-index: 81;
-  }
-  
+
+
 /*FOOTER*/
 
 .footer {
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
-    background-color: #323232; 
+    background-color: #323232;
     font-size: 16px;
     line-height: 28px;
 }
 
 .footer-section {
-    
+
     text-align: center;
 }
 
 .footer-text {
     display: inline-block;
-    
-    
+
+
 }
 
 .footer-link {
     color: #3b746a;
     text-decoration: none;
-    
+
 }
-
-
-
-  
