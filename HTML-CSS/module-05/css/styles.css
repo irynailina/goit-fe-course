@@ -61,8 +61,11 @@ img {
 
 .site-logo::first-letter {
     color: #1abc9c;
+    font-weight: 700;
 }
 
+
+  
 /*SITE NAVIGATION*/
 
 .site-navigation {
@@ -269,37 +272,33 @@ img {
     font-size: 18px;
     line-height: 32px;
     vertical-align: middle;
+    background-color: #323232;
+}
 
+.item-name-title {
+    float: left;
+    width: 200px;
 }
 
 .item-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #ffffff;
-    background-color: #323232;
-    margin: 0;
-    width: 200px;
-    float: left;
     text-transform: uppercase;
     padding-left: 12px;
-    height: 40px;
-    padding-top: 6px;
-    cursor: pointer;
+    line-height: 40px;
     text-decoration: none;
-
-
 }
 
 .item-price {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #ffffff;
-    background-color: #323232;
+    background-color: rgba(255, 255, 255, 0.44);
     margin: 0;
     width: 55px;
     float: left;
     padding-left: 12px;
-    opacity: 44%;
     height: 40px;
     padding-top: 6px;
 }
@@ -320,7 +319,6 @@ img {
     border-style: solid;
     background-clip: padding-box;
     background-color: rgba(0, 0, 0, .5);
-    opacity: 0;
     visibility: hidden;
 }
 
@@ -329,11 +327,9 @@ img {
     visibility: visible;
 }
 
-.info a:hover {
-    background-color: rgb(26, 188, 156);
-}
 
-.products-list-item:hover .info a {
+
+.products-list-item:hover .info  {
     background-color: rgb(26, 188, 156);
 }
 
@@ -341,7 +337,7 @@ img {
 
 .buttons {
     padding-left: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -367,7 +363,6 @@ img {
 
 .card-button:hover {
     background-color: rgb(26, 188, 156);
-    ;
 }
 
 
