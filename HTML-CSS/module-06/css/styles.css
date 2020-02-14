@@ -118,6 +118,8 @@ p {
 }
 
 .section-title-bottom {
+    display: block;
+    margin: 0 auto;
     font-size: 30px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
