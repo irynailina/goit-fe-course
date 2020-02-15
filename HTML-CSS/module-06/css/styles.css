@@ -70,6 +70,7 @@ p {
     padding: 0;
     width: 492px;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 .header-list-item::after {
@@ -97,6 +98,7 @@ p {
 
 .services-block {
     padding-bottom: 92px;
+    
 }
 
 .section-title {
