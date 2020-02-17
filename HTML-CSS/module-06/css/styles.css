@@ -417,14 +417,19 @@ p {
 }
 
 .form-input {
+    
+    width: 228px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.form-input::placeholder {
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(204, 204, 204);
     font-style: italic;
     font-weight: 300;
     line-height: 1.6;
-    width: 228px;
-    height: 40px;
-    padding-left: 10px;
-    border: 1px solid rgb(204, 204, 204);
+
 }
