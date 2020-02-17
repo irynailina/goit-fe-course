@@ -1,0 +1,305 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+:root {
+    --first-color: rgb(254, 209, 54);
+    --second-color: rgb(34, 34, 34);
+    --third-color: rgb(255, 255, 255);
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 58.75rem;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.page-header {
+    padding-bottom: 3.75rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 7.5rem;
+    align-items: center;
+}
+
+.site-navigation {
+    width: 30.3125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navigation-item-link {
+    color: var(--second-color);
+    font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 2.929;
+  font-weight: 700;
+}
+
+.site-navigation-item-link:hover,
+.site-navigation-item-link:focus {
+    color: var(--first-color);
+}
+
+/* SERVICES SECTION*/
+
+.services-block {
+    padding-bottom: 7.5rem;
+}
+
+.services-block-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--second-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 1.1875rem;
+}
+
+.section-block-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Droid Serif', arial;
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 4.875rem;
+}
+
+
+.services-list {
+    width: 58.75rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.services-list-item::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 5rem;
+    height: 5.125rem;
+    border: 0.1875rem solid;
+    border-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.basket::before {
+    background-image: url(../images/Icon-Basket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.laptop::before {
+    background-image: url(../images/Icon-Laptop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.locked::before {
+    background-image: url(../images/Icon-Locked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+  
+.services-list-item-name {
+    font-size: 1.125rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--second-color);
+    font-weight: bold;
+    line-height: 4.167;
+
+}
+
+.services-list-item-about {
+    font-size: 0.875rem;
+  font-family: "RobotoSlab";
+  color: rgb(119, 119, 119);
+  line-height: 1.4;
+
+}
+
+/* CONTACT SECTION */
+
+.contact-block {
+    background-color: var(--second-color);
+    background-image: url(../images/Map\ Image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom 18px;
+}
+
+.contact-block-title {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 6.5rem;
+    margin-bottom: 1.25rem;;
+
+}
+
+/* FORM */
+
+.profile-form-list {
+    height: 13.3125rem;
+}
+
+
+input {
+    width: 28.4375rem;
+    height: 3.25rem;
+}
+
+.profile-form-list-item:not(:last-child) {
+    margin-bottom: 1.75rem;
+}
+  
+
+input::placeholder {
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 1.375rem;
+}
+
+textarea::placeholder {
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 1.375rem;
+    padding-top: 1.25rem;
+    }
+
+textarea {
+    width: 28.4375rem;
+    height: 13.375rem;
+    resize: none;
+    border: 0.0625rem solid;
+    border-radius: 0.125rem;
+    border-color: rgb(201, 201, 201);
+}
+
+
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.send-button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    font-size: 1.125rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 15.25rem;
+    height: 4.375rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    width: 58.75rem;
+    margin-top: 1.875rem;
+}
+
+.profile-form {
+    padding-bottom:  7.25rem;
+}
+
+input:required:focus:valid,
+textarea:required:focus:valid {
+    outline: green solid 0.25rem;
+}
+
+input:required:focus:invalid,
+textarea:required:focus:invalid {
+    outline: red solid 0.25rem;
+}
