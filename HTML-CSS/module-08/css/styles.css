@@ -233,8 +233,7 @@ h3 {
     text-align: center;
 }
 
-.partners-list-item:not(:last-child) {
-    margin-bottom: 28px;    }
+
 
 .partners-list-item,
 .partners-list-item-image {
@@ -345,7 +344,16 @@ h3 {
 }
 
 
+@media (max-width: 666px) {
+    .partners-list-item:not(:last-child) {
+        margin-bottom: 28px;    }
+}
 
+@media (min-width: 667px) and (max-width: 942px) {
+    .partners-list-item:not(:nth-child(2n)) {
+        margin-bottom: 28px;
+    }
+}
 
 @media (min-width: 667px) {
 
@@ -423,9 +431,10 @@ h3 {
         
     }
 
-    .partners-list-item:nth-child(2n) {
+    .partners-list-item {
         margin-bottom: 0;
     }
+
 
     .other-partners-link {
         width: 188px;
