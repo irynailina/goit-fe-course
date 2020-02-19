@@ -328,18 +328,18 @@ h3 {
 }
 
 
-@media (max-width: 666px) {
+@media (max-width: 767px) {
     .partners-list-item:not(:last-child) {
         margin-bottom: 28px;    }
 }
 
-@media (min-width: 667px) and (max-width: 942px) {
+@media (min-width: 768px) and (max-width: 942px) {
     .partners-list-item:not(:nth-child(2n)) {
         margin-bottom: 28px;
     }
 }
 
-@media (min-width: 678px) {
+@media (min-width: 768px) {
 
     .container {
         width: 660px;
