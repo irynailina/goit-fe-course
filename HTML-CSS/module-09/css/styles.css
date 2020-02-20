@@ -71,8 +71,10 @@ h3 {
 
 .image-part {
     background-image: url(../img/tel.jpg);
-    height: 540px;
+    height: 100vh;
     margin-bottom: 68px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header-buttons {
@@ -198,6 +200,15 @@ h3 {
     line-height: 1.2;
 }
 
+.patners__block-title {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+
 
 .partners-list-item-image {
     margin: 0 auto;
@@ -301,9 +312,9 @@ h3 {
 @media (min-width: 768px) {
     .image-part {
         background-image: url(../img/pl.jpg);
-        height: 700px;
         margin-bottom: 68px;
-        background-size: cover;   }
+        
+    }
     
     .other-partners-link {
         width: 190px;
@@ -353,8 +364,7 @@ h3 {
 
     .image-part {
         background-image: url(../img/desk.jpg);
-        height: 700px;
         margin-bottom: 68px;
-        background-size: cover;
+        
     }
 }
