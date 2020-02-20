@@ -67,36 +67,21 @@ h3 {
     margin: 0;
 }
 
-.container {
-    width: 292px;
-    margin: 0 auto;
-    /* padding: 0 15px; */
-}
-
 /* HEADER */
 
-.header-block {
-    min-height: 74px;
-} 
-
-.header-block {
-    display: flex;
-    padding-top: 20px;
-    padding-left: 62px;
-}
-
-.header-part {
+.image-part {
     background-image: url(../img/tel.jpg);
-    /* height: 100wh; */
     height: 540px;
-    background-size: cover;
-
+    margin-bottom: 68px;
 }
+
+.header-buttons {
+    text-align: center;
+}
+
 
 .log-in,
 .sign-up {
-    display: block;
-    margin: 0 auto;
     width: 88px;
     height: 36px;
     border: none;
@@ -106,7 +91,6 @@ h3 {
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
-    margin: 0;
     
 }
 
@@ -128,9 +112,6 @@ h3 {
 }
 
 .site-logo {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
     font-size: 20px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
@@ -139,30 +120,36 @@ h3 {
     line-height: 1.2;
 }
 
-.header-block {
-    padding-bottom: 112px;
+.logo-part {
+    margin-bottom: 36px;
+    text-align: center;
 }
 
-.picture-text {
-    padding-top: 34px;
+.header-buttons {
+    margin-top: 20px;
+    margin-bottom: 118px;
 }
 
-.title-list-item {
+.main-title-part {
+    text-align: center;
+}
+
+.main-subtitle {
     text-align: center;
 }
 
 .main-title {
-    text-align: center;
+    
     font-size: 30px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-    /* margin-bottom: 14px; */
+
 }
 
-.main-title-part {
+.main-title-part-second {
     width: 292px;
     font-size: 30px;
     font-family: "Montserrat";
@@ -176,7 +163,7 @@ h3 {
 
 
 .main-subtitle {
-    display: block;
+    
     width: 222px;
     font-size: 18px;
     font-family: "Roboto";
@@ -199,55 +186,50 @@ h3 {
     height: 40px;
     padding-top: 12px;
     margin: 0 auto;
+    padding-left: 48px;
 
 }
-
-.picture-text-list-item {
-    text-align: center;
-}
-
-/* PARTNERS */
-
-.partners-block {
-    
-    padding-top: 68px;
-    padding-bottom: 58px;
-}
-
 
 .patners__block-title {
     text-align: center;
-    font-size: 22px;
+}
+
+.partner-name {
+    font-size: 14px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
-.partners-list {
-   
-    width: 230px;
-    margin: 0 auto; 
-    margin-bottom: 28px;
+.partner-info {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
 }
-  
 
-.partners-list-item {
+
+.partners-list-item-image {
+    margin: 0 auto;
+}
+
+.partner-description {
+    padding: 0 46px;
     text-align: center;
 }
 
-
-
-
-  
+.partner-part-title {
+    margin-bottom: 14px;
+}
 
 .image-wrapper {
     position: relative;
     width: 122px;
     margin: 0 auto;
     margin-top: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
 }
 
@@ -286,163 +268,104 @@ h3 {
     background-color: rgb(78, 115, 219);
 }
 
-.partner-name {
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 16px;
-}
-
-.partner-info {
-    font-size: 14px;
-    font-family: "Roboto";
-    color: rgb(102, 102, 102);
-    line-height: 1.2;
-}
-
-
 .other-partners-link {
     display: block;
-    width: 280px;
     height: 38px;
     font-size: 14px;
     font-family: "Montserrat";
-    color: rgb(255, 78, 80);
+    background-color: rgb(255, 78, 80);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
-    
     text-align: center;
     padding: 10px 0;
     margin-top: 26px;
     margin: 0 auto;
+    margin-bottom: 58px;
+    border-radius: 20px;
 }
 
 .other-partners-link:hover {
     border-style: solid;
     border-width: 2px;
     border-color: rgb(255, 78, 80);
+    background-color:  rgb(255, 255, 255);
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 78, 80);
+}
+
+.partner-card-section {
+    padding-bottom: 28px;
 }
 
 
 @media (max-width: 767px) {
-    .partners-list-item:not(:last-child) {
+    .partner-card:not(:last-child) {
         margin-bottom: 28px;    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .partners-list-item:not(:nth-child(2n)) {
+    .partner-card:nth-child(even) {
         margin-bottom: 28px;
     }
 }
 
 @media (min-width: 768px) {
+    .image-part {
+        background-image: url(../img/pl.jpg);
+        height: 700px;
+        margin-bottom: 68px;
+        background-size: cover;   }
+    
+        .other-partners-link {
+        width: 190px;
+    }
+    
+    .partner-part-title {
+        margin-bottom: 30px;
+    }
 
-    .container {
-        width: 660px;
-}
+    .partner-description {
+        padding: 0 20px;
+    }
 
-.header-part {
-    background-image: url(../img/pl.jpg);
-    /* height: 100wh; */
-    height: 700px;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.site-logo {
-    margin-left: 0;
-    margin-top: 22px;
-}
-
-.main-title {
-    font-size: 52px;
-    margin-bottom: 4px;
-}
-
-.main-title-part {
-    font-size: 52px;
+    .main-title {
+        font-size: 52px;
+        margin-bottom: 4px;
+    }
+    .main-title-part-second {
+        font-size: 52px;
     width: 504px;
     margin-bottom: 18px;
-}
+    }
+    
 
-.main-subtitle {
-    font-size: 24px;
-    width: 404px;
-    margin-bottom: 34px;
-}
+    .main-title-part {
+        font-size: 52px;
+        width: 504px;
+        margin-bottom: 18px;
+    }
 
-.patners__block-title {
-    margin-bottom: 29px;
-}
+    .main-subtitle {
+        font-size: 24px;
+        width: 404px;
+        margin-bottom: 34px;
+    }
 
-.partners-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 460px;
-    justify-content: space-between;
-
+    .logo-part {
+        margin-top: 22px;
+    }
 }
-
-.partners-list-item {
-    width: 200px;
-}
-
-
-.partner-first {
-    order: 1;
-}
-.partner-second {
-    order: 3;
-}
-.partner-third {
-    order: 2;
-}
-.partner-fourth {
-    order: 4;
-}
-
-.other-partners-link {
-    width: 188px;
-
-}
-
-}
-
 
 @media (min-width: 992px) {
-
-    .container {
-        width: 942px;
+    .partner-description {
+        padding: 0;
     }
 
-    .header-part {
+    .image-part {
         background-image: url(../img/desk.jpg);
         height: 700px;
-        
-    }
-
-    .partners-list {
-        width: auto;
-    }
-
-    .partners-list-item {
-        margin-bottom: 0;
-    }
-
-
-    .other-partners-link {
-        width: 188px;
-    }
-
-    .partners-block {
-        padding-bottom: 40px;
+        margin-bottom: 68px;
+        background-size: cover;
     }
 }
-
