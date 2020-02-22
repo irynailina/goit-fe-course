@@ -321,36 +321,36 @@ p {
 
 .alarm::before {
     content: "";
-    background-image: url(/img/services-pic/alarm.svg);
+    background-image: url(./img/services-pic/alarm.svg);
 
 }
 
 .line-graph::before {
     content: "";
-    background-image: url(/img/services-pic/line-graph.svg)
+    background-image: url(./img/services-pic/line-graph.svg)
 
 }
 
 .computer::before {
     content: "";
-    background-image: url(/img/services-pic/computer.svg);
+    background-image: url(./img/services-pic/computer.svg);
 
 }
 
 .book::before {
     content: "";
-    background-image: url(/img/services-pic/book.svg)
+    background-image: url(./img/services-pic/book.svg)
 
 }
 
 .home::before {
     content: "";
-    background-image: url(/img/services-pic/home.svg)
+    background-image: url(./img/services-pic/home.svg)
 }
 
 .image::before {
     content: "";
-    background-image: url(/img/services-pic/image.svg)
+    background-image: url(./img/services-pic/image.svg)
 }
 
 
