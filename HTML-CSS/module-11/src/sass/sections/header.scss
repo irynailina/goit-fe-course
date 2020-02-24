@@ -4,6 +4,7 @@
   background-image: -webkit-gradient(linear, left bottom, left top, from($gradient-color)), url(../img/eagle.jpg);
   background-image: -o-linear-gradient(bottom, $gradient-color), url(../images/banner/eagle.jpg);
   background-image: linear-gradient(to top, $gradient-color), url(../images/banner/eagle.jpg);
+  background-repeat: no-repeat;
   height: 100vh;
   margin-bottom: 5rem;
 
