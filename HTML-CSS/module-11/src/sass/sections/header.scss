@@ -1,0 +1,149 @@
+/* HEADER */
+
+.banner {
+  background-image: -webkit-gradient(linear, left bottom, left top, from($gradient-color)), url(../img/eagle.jpg);
+  background-image: -o-linear-gradient(bottom, $gradient-color), url(../images/banner/eagle.jpg);
+  background-image: linear-gradient(to top, $gradient-color), url(../images/banner/eagle.jpg);
+  height: 100vh;
+  margin-bottom: 5rem;
+
+  &__name {
+    font-size: 9.375rem;
+    line-height: 1;
+    color: $header-color;
+    width: 51.3125rem;
+    padding-top: 2.875rem;
+    ;
+
+    &-part {
+      font-size: 4.5rem;
+      color: $header-color;
+      margin-bottom: 5.625rem;
+    }
+  }
+
+  &__link {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    font-family: $main-font;
+    color: $header-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border-style: solid;
+    border-width: 0.1875rem;
+    border-color: $header-color;
+    width: 9.625rem;
+    padding: 0.75rem;
+    text-align: center;
+  }
+}
+
+.navigation {
+  margin-bottom: 5.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 6.25rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 39.25rem;
+    padding: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 0.9375rem;
+
+    &-link {
+      font-size: 0.875rem;
+      font-family: $main-font;
+      color: $header-color;
+      text-transform: uppercase;
+      line-height: 1.2;
+
+
+      &:hover {
+        color: $hover-color;
+        -webkit-transition: color 200ms linear;
+        -o-transition: color 200ms linear;
+        transition: color 200ms linear;
+      }
+
+      &_icon {
+        fill: $header-color;
+        width: 1.125rem;
+        height: 0.9375rem;
+      
+        &:hover {
+          fill: $hover-color;
+      }
+
+      
+      }
+    }
+  }
+
+}
+
+
+.navigation__list-item::after {
+  display: block;
+  content: "";
+  background-color: $hover-color;
+  width: 0;
+  height: 0.1875rem;
+  margin-top: 0.75rem;
+}
+
+.navigation__list-item:hover::after {
+  width: 100%;
+  -webkit-transition: width 200ms linear;
+  -o-transition: width 200ms linear;
+  transition: width 200ms linear;
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-family: $main-font;
+  color: $header-color;
+  font-weight: bold;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title__top {
+  font-family: $title-top-font;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.title__bottom {
+  font-family: $main-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(min-resolution: 192dpi) {
+  .site-navigation {
+    background-image: url(../images/banner/eagle@2x.jpg);
+  }
+}
