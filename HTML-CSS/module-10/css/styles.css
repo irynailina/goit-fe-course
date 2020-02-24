@@ -117,8 +117,8 @@ p {
 
 .banner {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--gradient-color))), url(../img/eagle.jpg);
-    background-image: -o-linear-gradient(bottom, var(--gradient-color)), url(../img/eagle.jpg);
-    background-image: linear-gradient(to top, var(--gradient-color)), url(../img/eagle.jpg);
+    background-image: -o-linear-gradient(bottom, var(--gradient-color)), url(../images/banner/eagle.jpg);
+    background-image: linear-gradient(to top, var(--gradient-color)), url(../images/banner/eagle.jpg);
     height: 100vh;
     margin-bottom: 5rem;
 }
@@ -320,32 +320,32 @@ p {
 
 .alarm::before {
     content: "";
-    background-image: url(../img/services-pic/alarm.svg);
+    background-image: url(../images/services/alarm.svg);
 }
 
 .line-graph::before {
     content: "";
-    background-image: url(../img/services-pic/line-graph.svg)
+    background-image: url(../images/services/line-graph.svg)
 }
 
 .computer::before {
     content: "";
-    background-image: url(../img/services-pic/computer.svg);
+    background-image: url(../images/services/computer.svg);
 }
 
 .book::before {
     content: "";
-    background-image: url(../img/services-pic/book.svg)
+    background-image: url(../images/services/book.svg)
 }
 
 .home::before {
     content: "";
-    background-image: url(../img/services-pic/home.svg)
+    background-image: url(../images/services/home.svg)
 }
 
 .image::before {
     content: "";
-    background-image: url(../img/services-pic/image.svg)
+    background-image: url(../images/services/image.svg)
 }
 
 
@@ -599,6 +599,6 @@ p {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
     .site-navigation {
-        background-image: url(../img/eagle@2x.jpg);
+        background-image: url(../images/banner/eagle@2x.jpg);
     }
 }
