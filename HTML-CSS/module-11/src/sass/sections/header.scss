@@ -5,6 +5,7 @@
   background-image: -o-linear-gradient(bottom, $gradient-color), url(../images/banner/eagle.jpg);
   background-image: linear-gradient(to top, $gradient-color), url(../images/banner/eagle.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   margin-bottom: 5rem;
 
